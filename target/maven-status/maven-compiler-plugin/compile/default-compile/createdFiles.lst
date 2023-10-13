@@ -1,0 +1,4 @@
+com\hozhabr\demo\repository\UserRepository.class
+com\hozhabr\demo\model\User.class
+com\hozhabr\demo\DemoApplication.class
+com\hozhabr\demo\model\Task.class

@@ -1,0 +1,25 @@
+2023-10-12 09:54:27.682  WARN 8280 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h48m29s895ms207µs600ns).
+2023-10-12 10:17:16.891  INFO 8280 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-12 10:17:16.892  INFO 8280 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-10-12 10:17:16.893 DEBUG 8280 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    
+    alter table post 
+       drop constraint FK5tmv5wjg96ufq5kyd3rp7jofu
+2023-10-12 10:17:16.900 DEBUG 8280 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    
+    alter table tasks 
+       drop constraint FK6s1ob9k4ihi75xbxe2w0ylsdh
+2023-10-12 10:17:16.901 DEBUG 8280 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    
+    drop table if exists page cascade
+2023-10-12 10:17:16.906 DEBUG 8280 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    
+    drop table if exists post cascade
+2023-10-12 10:17:16.910 DEBUG 8280 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    
+    drop table if exists tasks cascade
+2023-10-12 10:17:16.915 DEBUG 8280 --- [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    
+    drop table if exists users cascade
+2023-10-12 10:17:16.922  INFO 8280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-12 10:17:16.928  INFO 8280 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
